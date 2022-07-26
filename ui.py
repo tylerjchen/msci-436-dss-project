@@ -98,4 +98,4 @@ if st.button('Submit'):
     transformed_values = stdSc.fit_transform(values.T)
     price_estimate = model.predict(transformed_values.T)
     st.subheader('Price Estimate')
-    st.write('Estimated price selling price: ${price}'.format(price=np.expm1(price_estimate)[0].round(2))) # inverse log transform
+    st.write('Estimated selling price: ${price}'.format(price=np.expm1(price_estimate)[0].round(2))) # inverse log transform
